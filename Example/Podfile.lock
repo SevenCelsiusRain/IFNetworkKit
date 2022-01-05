@@ -1,0 +1,16 @@
+PODS:
+  - IFNetworkKit (0.1.0)
+
+DEPENDENCIES:
+  - IFNetworkKit (from `../`)
+
+EXTERNAL SOURCES:
+  IFNetworkKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IFNetworkKit: ad1296468922bb22b6a8ae41442f7712a8895ed0
+
+PODFILE CHECKSUM: 5146b252c946185668ce64cb3587397ac3b2b90b
+
+COCOAPODS: 1.11.2
