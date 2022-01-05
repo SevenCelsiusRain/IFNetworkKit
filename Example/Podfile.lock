@@ -1,15 +1,36 @@
 PODS:
-  - IFNetworkKit (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - IFNetworkKit (0.0.0.1):
+    - AFNetworking
 
 DEPENDENCIES:
   - IFNetworkKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   IFNetworkKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  IFNetworkKit: ad1296468922bb22b6a8ae41442f7712a8895ed0
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  IFNetworkKit: c0a8ac6577b4ff11f7679d0d27ca77de68ff4370
 
 PODFILE CHECKSUM: 5146b252c946185668ce64cb3587397ac3b2b90b
 

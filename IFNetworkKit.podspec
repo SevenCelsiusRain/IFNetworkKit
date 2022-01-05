@@ -8,27 +8,25 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IFNetworkKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of IFNetworkKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '0.0.0.1'
+  s.summary          = '基于AFNetworking的网络封装'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  1. 支持GET/POST/HEAD/PUT/DELETE/PATCH请求方法、基本的网络请求
+  2. 支持下载（断点续传）
+  3. 支持MultiFormData格式的数据上传
+  4. 支持自定义请求的回调（请求开始、请求成功、请求失败、请求进度）
+  5. 支持自定义请求的拦截器，响应体校验器、签名算法、响应内容序列化规则、请求分类
+  6. 支持基于分类的网络请求配置
+  7. 支持响应内容的默认序列化操作IFModelRequest
                        DESC
-
-  s.homepage         = 'https://github.com/张高磊/IFNetworkKit'
+  s.homepage         = 'https://ifgitlab.gwm.cn/iov-ios/IFNetworkKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '张高磊' => 'mrglzh@yeah.net' }
-  s.source           = { :git => 'https://github.com/张高磊/IFNetworkKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'http://10.255.35.174/iov-ios/IFNetworkKit.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'IFNetworkKit/Classes/**/*'
   
@@ -38,5 +36,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking'
 end
