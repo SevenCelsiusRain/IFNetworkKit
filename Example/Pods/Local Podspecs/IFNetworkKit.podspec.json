@@ -1,8 +1,8 @@
 {
   "name": "IFNetworkKit",
   "version": "0.0.0.1",
-  "summary": "网络请求",
-  "description": "网络请求， AFNetworking 进一步封装",
+  "summary": "基于AFNetworking的网络封装",
+  "description": "1. 支持GET/POST/HEAD/PUT/DELETE/PATCH请求方法、基本的网络请求\n2. 支持下载（断点续传）\n3. 支持MultiFormData格式的数据上传\n4. 支持自定义请求的回调（请求开始、请求成功、请求失败、请求进度）\n5. 支持自定义请求的拦截器，响应体校验器、签名算法、响应内容序列化规则、请求分类\n6. 支持基于分类的网络请求配置\n7. 支持响应内容的默认序列化操作IFModelRequest",
   "homepage": "https://ifgitlab.gwm.cn/iov-ios/IFNetworkKit",
   "license": {
     "type": "MIT",

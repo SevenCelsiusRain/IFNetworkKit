@@ -10,6 +10,12 @@
 #endif
 #endif
 
+#import "IFBaseRequest.h"
+#import "IFErrorResponseModel.h"
+#import "IFNetworkKit.h"
+#import "IFRequestFilter.h"
+#import "IFRequestSignature.h"
+#import "IFRequestSignMethod.h"
 
 FOUNDATION_EXPORT double IFNetworkKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char IFNetworkKitVersionString[];
