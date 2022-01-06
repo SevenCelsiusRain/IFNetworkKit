@@ -63,6 +63,22 @@
 		7FFEDE1E2785B87A00D3A58A /* IFDictionaryValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE1C2785B87A00D3A58A /* IFDictionaryValueTransformer.m */; };
 		7FFEDE212785B89100D3A58A /* IFModelUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE1F2785B89100D3A58A /* IFModelUtil.h */; };
 		7FFEDE222785B89100D3A58A /* IFModelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE202785B89100D3A58A /* IFModelUtil.m */; };
+		7FFEDE252786789C00D3A58A /* IFRequestCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE232786789C00D3A58A /* IFRequestCache.h */; };
+		7FFEDE262786789C00D3A58A /* IFRequestCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE242786789C00D3A58A /* IFRequestCache.m */; };
+		7FFEDE29278679D900D3A58A /* IFNetworkConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE27278679D900D3A58A /* IFNetworkConfigManager.h */; };
+		7FFEDE2A278679D900D3A58A /* IFNetworkConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE28278679D900D3A58A /* IFNetworkConfigManager.m */; };
+		7FFEDE2C27867B0600D3A58A /* IFNetworkDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE2B27867B0600D3A58A /* IFNetworkDefines.h */; };
+		7FFEDE2F27867CD700D3A58A /* IFAFJSONResponseSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE2D27867CD700D3A58A /* IFAFJSONResponseSerializer.h */; };
+		7FFEDE3027867CD700D3A58A /* IFAFJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE2E27867CD700D3A58A /* IFAFJSONResponseSerializer.m */; };
+		7FFEDE3927868B6800D3A58A /* IFDefaultErrorMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE3727868B6800D3A58A /* IFDefaultErrorMessage.h */; };
+		7FFEDE3A27868B6800D3A58A /* IFDefaultErrorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE3827868B6800D3A58A /* IFDefaultErrorMessage.m */; };
+		7FFEDE3D27868BDE00D3A58A /* IFModelSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE3B27868BDE00D3A58A /* IFModelSerialization.h */; };
+		7FFEDE3E27868BDE00D3A58A /* IFModelSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE3C27868BDE00D3A58A /* IFModelSerialization.m */; };
+		7FFEDE4027868D8F00D3A58A /* IFModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE3F27868D8F00D3A58A /* IFModel.h */; };
+		7FFEDE4327868F3900D3A58A /* IFModelRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE4127868F3900D3A58A /* IFModelRequest.h */; };
+		7FFEDE4427868F3900D3A58A /* IFModelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE4227868F3900D3A58A /* IFModelRequest.m */; };
+		7FFEDE472786942800D3A58A /* IFCommonRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FFEDE452786942800D3A58A /* IFCommonRequestManager.h */; };
+		7FFEDE482786942800D3A58A /* IFCommonRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FFEDE462786942800D3A58A /* IFCommonRequestManager.m */; };
 		801724F329AA434F8BB6A11E96E5805A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5D67C4903542379A45E2A9E3AD512A /* AFAutoPurgingImageCache.m */; };
 		81C76941D750B3F226E07AE600A67FC6 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BEF3ED4DA9B8AAE20161D6B17D9800 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		835B0063A5575581DC7C59543356F5F2 /* Pods-IFNetworkKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B367C03131F57542A4E51B8B454762C /* Pods-IFNetworkKit_Example-dummy.m */; };
@@ -182,6 +198,22 @@
 		7FFEDE1C2785B87A00D3A58A /* IFDictionaryValueTransformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFDictionaryValueTransformer.m; sourceTree = "<group>"; };
 		7FFEDE1F2785B89100D3A58A /* IFModelUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFModelUtil.h; sourceTree = "<group>"; };
 		7FFEDE202785B89100D3A58A /* IFModelUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFModelUtil.m; sourceTree = "<group>"; };
+		7FFEDE232786789C00D3A58A /* IFRequestCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFRequestCache.h; sourceTree = "<group>"; };
+		7FFEDE242786789C00D3A58A /* IFRequestCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFRequestCache.m; sourceTree = "<group>"; };
+		7FFEDE27278679D900D3A58A /* IFNetworkConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFNetworkConfigManager.h; sourceTree = "<group>"; };
+		7FFEDE28278679D900D3A58A /* IFNetworkConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFNetworkConfigManager.m; sourceTree = "<group>"; };
+		7FFEDE2B27867B0600D3A58A /* IFNetworkDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFNetworkDefines.h; sourceTree = "<group>"; };
+		7FFEDE2D27867CD700D3A58A /* IFAFJSONResponseSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFAFJSONResponseSerializer.h; sourceTree = "<group>"; };
+		7FFEDE2E27867CD700D3A58A /* IFAFJSONResponseSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFAFJSONResponseSerializer.m; sourceTree = "<group>"; };
+		7FFEDE3727868B6800D3A58A /* IFDefaultErrorMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFDefaultErrorMessage.h; sourceTree = "<group>"; };
+		7FFEDE3827868B6800D3A58A /* IFDefaultErrorMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFDefaultErrorMessage.m; sourceTree = "<group>"; };
+		7FFEDE3B27868BDE00D3A58A /* IFModelSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFModelSerialization.h; sourceTree = "<group>"; };
+		7FFEDE3C27868BDE00D3A58A /* IFModelSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFModelSerialization.m; sourceTree = "<group>"; };
+		7FFEDE3F27868D8F00D3A58A /* IFModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFModel.h; sourceTree = "<group>"; };
+		7FFEDE4127868F3900D3A58A /* IFModelRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFModelRequest.h; sourceTree = "<group>"; };
+		7FFEDE4227868F3900D3A58A /* IFModelRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFModelRequest.m; sourceTree = "<group>"; };
+		7FFEDE452786942800D3A58A /* IFCommonRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFCommonRequestManager.h; sourceTree = "<group>"; };
+		7FFEDE462786942800D3A58A /* IFCommonRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFCommonRequestManager.m; sourceTree = "<group>"; };
 		8278B64965BC4FA7DD9B7ED4FA408EC1 /* IFNetworkKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IFNetworkKit-prefix.pch"; sourceTree = "<group>"; };
 		8342ABBA28661B58BA00B4CB751E2D39 /* Pods-IFNetworkKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IFNetworkKit_Tests.modulemap"; sourceTree = "<group>"; };
 		842F909230AAC675241531ECA8AEE4A5 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
@@ -354,24 +386,39 @@
 				7FFEDDE22785AD6D00D3A58A /* IFNetworkKit.h */,
 				7FFEDDE42785AD6D00D3A58A /* IFBaseRequest.h */,
 				7FFEDDEF2785AD6D00D3A58A /* IFBaseRequest.m */,
+				7FFEDDF02785AD6D00D3A58A /* IFNetworkConfig.h */,
 				7FFEDDE32785AD6D00D3A58A /* IFNetworkConfig.m */,
 				7FFEDDF22785AD6D00D3A58A /* IFStubRequestManager.h */,
 				7FFEDDE52785AD6D00D3A58A /* IFStubRequestManager.m */,
 				7FFEDDE62785AD6D00D3A58A /* IFResponseModel.h */,
-				7FFEDDE72785AD6D00D3A58A /* IFErrorMessageProtocol.h */,
-				7FFEDDE82785AD6D00D3A58A /* IFRequestFilter.h */,
+				7FFEDDF12785AD6D00D3A58A /* IFResponseModel.m */,
+				7FFEDDF52785AD6D00D3A58A /* IFRequestManager.h */,
 				7FFEDDE92785AD6D00D3A58A /* IFRequestManager.m */,
 				7FFEDDEA2785AD6D00D3A58A /* IFNetworkPrivateUtils.h */,
-				7FFEDDEB2785AD6D00D3A58A /* IFRequestSignature.h */,
-				7FFEDDEC2785AD6D00D3A58A /* .gitkeep */,
-				7FFEDDED2785AD6D00D3A58A /* IFErrorResponseModel.h */,
-				7FFEDDEE2785AD6D00D3A58A /* IFRequestSignMethod.h */,
-				7FFEDDF02785AD6D00D3A58A /* IFNetworkConfig.h */,
-				7FFEDDF12785AD6D00D3A58A /* IFResponseModel.m */,
 				7FFEDDF32785AD6D00D3A58A /* IFNetworkPrivateUtils.m */,
+				7FFEDDEB2785AD6D00D3A58A /* IFRequestSignature.h */,
 				7FFEDDF42785AD6D00D3A58A /* IFRequestSignature.m */,
-				7FFEDDF52785AD6D00D3A58A /* IFRequestManager.h */,
+				7FFEDDED2785AD6D00D3A58A /* IFErrorResponseModel.h */,
 				7FFEDDF62785AD6D00D3A58A /* IFErrorResponseModel.m */,
+				7FFEDE232786789C00D3A58A /* IFRequestCache.h */,
+				7FFEDE242786789C00D3A58A /* IFRequestCache.m */,
+				7FFEDE27278679D900D3A58A /* IFNetworkConfigManager.h */,
+				7FFEDE28278679D900D3A58A /* IFNetworkConfigManager.m */,
+				7FFEDE2D27867CD700D3A58A /* IFAFJSONResponseSerializer.h */,
+				7FFEDE2E27867CD700D3A58A /* IFAFJSONResponseSerializer.m */,
+				7FFEDE3727868B6800D3A58A /* IFDefaultErrorMessage.h */,
+				7FFEDE3827868B6800D3A58A /* IFDefaultErrorMessage.m */,
+				7FFEDE3B27868BDE00D3A58A /* IFModelSerialization.h */,
+				7FFEDE3C27868BDE00D3A58A /* IFModelSerialization.m */,
+				7FFEDE4127868F3900D3A58A /* IFModelRequest.h */,
+				7FFEDE4227868F3900D3A58A /* IFModelRequest.m */,
+				7FFEDE452786942800D3A58A /* IFCommonRequestManager.h */,
+				7FFEDE462786942800D3A58A /* IFCommonRequestManager.m */,
+				7FFEDE2B27867B0600D3A58A /* IFNetworkDefines.h */,
+				7FFEDDE82785AD6D00D3A58A /* IFRequestFilter.h */,
+				7FFEDDE72785AD6D00D3A58A /* IFErrorMessageProtocol.h */,
+				7FFEDDEE2785AD6D00D3A58A /* IFRequestSignMethod.h */,
+				7FFEDDEC2785AD6D00D3A58A /* .gitkeep */,
 			);
 			name = Classes;
 			path = IFNetworkKit/Classes;
@@ -380,6 +427,7 @@
 		7FFEDE0C2785B52900D3A58A /* IFModel */ = {
 			isa = PBXGroup;
 			children = (
+				7FFEDE3F27868D8F00D3A58A /* IFModel.h */,
 				7FFEDE0D2785B7E100D3A58A /* NSString+IFModel.h */,
 				7FFEDE0E2785B7E100D3A58A /* NSString+IFModel.m */,
 				7FFEDE112785B7F400D3A58A /* NSObject+IFModel.h */,
@@ -545,20 +593,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFEDE3927868B6800D3A58A /* IFDefaultErrorMessage.h in Headers */,
 				7FFEDDF92785AD6D00D3A58A /* IFBaseRequest.h in Headers */,
+				7FFEDE472786942800D3A58A /* IFCommonRequestManager.h in Headers */,
 				7FFEDE1D2785B87A00D3A58A /* IFDictionaryValueTransformer.h in Headers */,
+				7FFEDE2F27867CD700D3A58A /* IFAFJSONResponseSerializer.h in Headers */,
 				7FFEDE072785AD6E00D3A58A /* IFStubRequestManager.h in Headers */,
 				7FFEDE192785B84A00D3A58A /* IFArrayValueTransformer.h in Headers */,
 				7FFEDE132785B7F400D3A58A /* NSObject+IFModel.h in Headers */,
+				7FFEDE4027868D8F00D3A58A /* IFModel.h in Headers */,
+				7FFEDE3D27868BDE00D3A58A /* IFModelSerialization.h in Headers */,
 				7FFEDE032785AD6E00D3A58A /* IFRequestSignMethod.h in Headers */,
+				7FFEDE4327868F3900D3A58A /* IFModelRequest.h in Headers */,
 				7FFEDE0F2785B7E100D3A58A /* NSString+IFModel.h in Headers */,
 				7FFEDDFF2785AD6E00D3A58A /* IFNetworkPrivateUtils.h in Headers */,
 				7FFEDE022785AD6E00D3A58A /* IFErrorResponseModel.h in Headers */,
+				7FFEDE2C27867B0600D3A58A /* IFNetworkDefines.h in Headers */,
 				080DFD705E0BBBBD09C6DD197A0D5E8C /* IFNetworkKit-umbrella.h in Headers */,
 				7FFEDDFB2785AD6D00D3A58A /* IFResponseModel.h in Headers */,
 				7FFEDE162785B82000D3A58A /* IFValueTransformer.h in Headers */,
 				7FFEDE002785AD6E00D3A58A /* IFRequestSignature.h in Headers */,
 				7FFEDDFD2785AD6D00D3A58A /* IFRequestFilter.h in Headers */,
+				7FFEDE29278679D900D3A58A /* IFNetworkConfigManager.h in Headers */,
+				7FFEDE252786789C00D3A58A /* IFRequestCache.h in Headers */,
 				7FFEDDF72785AD6D00D3A58A /* IFNetworkKit.h in Headers */,
 				7FFEDE0A2785AD6E00D3A58A /* IFRequestManager.h in Headers */,
 				7FFEDE052785AD6E00D3A58A /* IFNetworkConfig.h in Headers */,
@@ -786,20 +843,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFEDE4427868F3900D3A58A /* IFModelRequest.m in Sources */,
 				7FFEDDFE2785AD6E00D3A58A /* IFRequestManager.m in Sources */,
 				7FFEDE092785AD6E00D3A58A /* IFRequestSignature.m in Sources */,
 				7FFEDE1E2785B87A00D3A58A /* IFDictionaryValueTransformer.m in Sources */,
 				28AB826E96980AD10574572FE90E9945 /* IFNetworkKit-dummy.m in Sources */,
+				7FFEDE482786942800D3A58A /* IFCommonRequestManager.m in Sources */,
 				7FFEDE042785AD6E00D3A58A /* IFBaseRequest.m in Sources */,
 				7FFEDDF82785AD6D00D3A58A /* IFNetworkConfig.m in Sources */,
 				7FFEDDFA2785AD6D00D3A58A /* IFStubRequestManager.m in Sources */,
 				7FFEDE1A2785B84A00D3A58A /* IFArrayValueTransformer.m in Sources */,
 				7FFEDE102785B7E100D3A58A /* NSString+IFModel.m in Sources */,
+				7FFEDE3E27868BDE00D3A58A /* IFModelSerialization.m in Sources */,
+				7FFEDE3A27868B6800D3A58A /* IFDefaultErrorMessage.m in Sources */,
 				7FFEDE0B2785AD6E00D3A58A /* IFErrorResponseModel.m in Sources */,
 				7FFEDE082785AD6E00D3A58A /* IFNetworkPrivateUtils.m in Sources */,
 				7FFEDE142785B7F400D3A58A /* NSObject+IFModel.m in Sources */,
 				7FFEDE222785B89100D3A58A /* IFModelUtil.m in Sources */,
+				7FFEDE2A278679D900D3A58A /* IFNetworkConfigManager.m in Sources */,
 				7FFEDE062785AD6E00D3A58A /* IFResponseModel.m in Sources */,
+				7FFEDE3027867CD700D3A58A /* IFAFJSONResponseSerializer.m in Sources */,
+				7FFEDE262786789C00D3A58A /* IFRequestCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

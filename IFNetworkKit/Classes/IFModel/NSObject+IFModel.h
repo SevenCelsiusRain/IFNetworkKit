@@ -53,7 +53,7 @@
               keyPropertyMapper:(NSDictionary<NSString *, NSString *> *)keyPropertyMapper;
 
 /**
- @see ma_modelWithDictionary:mapperConfig:keyPropertyMapper:
+ @see if_modelWithDictionary:mapperConfig:keyPropertyMapper:
  
  @param dictionary 待转换的字典
  @return 当前类的实例
@@ -73,12 +73,12 @@
                       keyPropertyMapper:(NSDictionary<NSString *, NSString *> *)keyPropertyMapper;
 
 /**
- 配置类中数组元素对应的类名。会覆盖ma_jsonKeyCollectionMapper中的配置。
+ 配置类中数组元素对应的类名。会覆盖if_jsonKeyCollectionMapper中的配置。
  */
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *if_mapperConfig;
 
 /**
- 配置类中的属性应该从json中的哪个key中获取数据值，会覆盖ma_jsonKeyPropertyMapper中的配置。
+ 配置类中的属性应该从json中的哪个key中获取数据值，会覆盖if_jsonKeyPropertyMapper中的配置。
  */
 @property (nonatomic, strong) NSDictionary<NSString *, NSString *> *if_keyPropertyMapper;
 
@@ -86,7 +86,7 @@
  key: 类中的属性名
  value: NSArray中单个对象对应的类名，如果不配置对应关系则对应的属性直接返回集合对象。
  
- 默认的对象映射关系表，如果ma_mapperConfig中有重复的key则会替换该配置中的映射关系。
+ 默认的对象映射关系表，如果if_mapperConfig中有重复的key则会替换该配置中的映射关系。
  
  @return 属性名和集合中元素的类名的对应关系。
  */
@@ -97,7 +97,7 @@
  value: 对应类中的属性名
  
  配置类中的属性应该从json中的哪个key中获取数据值, 如果不配置直接将key作为属性名去获取值.
- 默认的对象映射关系表，如果ma_keyPropertyMapper中有重复的key则会替换该配置中的映射关系。
+ 默认的对象映射关系表，如果if_keyPropertyMapper中有重复的key则会替换该配置中的映射关系。
  
  @return 属性名和json中key的对应关系
  */
