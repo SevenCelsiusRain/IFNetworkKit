@@ -48,7 +48,6 @@ static const char IFModelKeyProertyMapper = '\0';
              keyPropertyMapper:(NSDictionary<NSString *, NSString *> *)keyPropertyMapper {
     
     NSMutableArray *dataArray = [[NSMutableArray alloc] init];
-    
     for (id aObject in array) {
         if ([aObject isKindOfClass:[NSDictionary class]]) {
             id resultObject = [self if_modelWithDictionary:aObject
