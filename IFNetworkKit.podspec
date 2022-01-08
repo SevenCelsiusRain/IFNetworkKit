@@ -29,16 +29,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'IFNetworkKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'IFNetworkKit' => ['IFNetworkKit/Assets/*.png']
-  # }
+  s.dependency 'AFNetworking'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-   s.dependency 'AFNetworking'
 
-   s.subspec 'IFModel' do |mSpec|
-   mSpec.source_files = 'IFNetworkKit/Classes/IFModel/**/*'
-   end
+    s.subspec 'IFModel' do |mSpec|
+    mSpec.source_files = 'IFNetworkKit/Classes/IFModel/**/*'
+    end
 end
