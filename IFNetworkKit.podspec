@@ -30,9 +30,11 @@ Pod::Spec.new do |s|
 
   s.source_files = 'IFNetworkKit/Classes/**/*'
   s.dependency 'AFNetworking'
+  s.requires_arc = true
 
 
     s.subspec 'IFModel' do |mSpec|
     mSpec.source_files = 'IFNetworkKit/Classes/IFModel/**/*'
+    mSpec.requires_arc = true
     end
 end
