@@ -40,6 +40,5 @@ Pod::Spec.new do |s|
 
    s.subspec 'IFModel' do |mSpec|
    mSpec.source_files = 'IFNetworkKit/Classes/IFModel/**/*'
-   mSpec.dependency 
    end
 end

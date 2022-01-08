@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "IFNetwork.h"
+#import "IFNetworkKit.h"
 
 @interface IFCommonRequestManager : NSObject
 

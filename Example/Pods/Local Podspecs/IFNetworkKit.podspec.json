@@ -23,5 +23,11 @@
     "AFNetworking": [
 
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "IFModel",
+      "source_files": "IFNetworkKit/Classes/IFModel/**/*"
+    }
+  ]
 }

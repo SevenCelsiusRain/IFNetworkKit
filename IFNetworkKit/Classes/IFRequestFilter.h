@@ -15,6 +15,6 @@
 @required
 
 - (BOOL)filter:(__kindof IFBaseRequest *)request;
-
+@end
 
 #endif /* IFRequestFilter_h */
