@@ -3,6 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'IFNetworkKit_Example' do
+  pod 'YYModel'
   pod 'IFNetworkKit', :path => '../'
 
   target 'IFNetworkKit_Tests' do

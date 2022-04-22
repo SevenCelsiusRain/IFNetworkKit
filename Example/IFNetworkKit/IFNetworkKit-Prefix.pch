@@ -14,3 +14,9 @@
     @import UIKit;
     @import Foundation;
 #endif
+
+#define kRequestCategoryNormal @"RequestCategoryNormal"
+#define kRequestCategoryUserCenter @"RequestCategoryUserCenter"
+
+#import <IFNetworkKit/IFNetworkKit.h>
+

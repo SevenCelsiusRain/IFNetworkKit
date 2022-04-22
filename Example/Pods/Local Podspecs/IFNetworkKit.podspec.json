@@ -24,10 +24,12 @@
 
     ]
   },
+  "requires_arc": true,
   "subspecs": [
     {
       "name": "IFModel",
-      "source_files": "IFNetworkKit/Classes/IFModel/**/*"
+      "source_files": "IFNetworkKit/Classes/IFModel/**/*",
+      "requires_arc": true
     }
   ]
 }
