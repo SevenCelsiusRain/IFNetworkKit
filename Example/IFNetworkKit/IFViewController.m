@@ -7,14 +7,12 @@
 //
 
 #import "IFViewController.h"
-#import "IFDataRequest.h"
-#import "IFMyModelRequest.h"
-#import "YYModel.h"
-#import "IFDemoModel.h"
+#import "IFBlockController.h"
+#import "IFDelegateController.h"
 
 @interface IFViewController ()
-@property (nonatomic, strong) UIButton *dataReqButton;
-@property (nonatomic, strong) UIButton *modelReqButton;
+@property (nonatomic, strong) UIButton *blcokButton;
+@property (nonatomic, strong) UIButton *delegateButton;
 
 @end
 
@@ -35,65 +33,53 @@
 #pragma mark - private
 
 - (void)setupViews {
-    [self.view addSubview:self.dataReqButton];
-    [self.view addSubview:self.modelReqButton];
+    self.title = @"网络请求 Demo";
+    [self.view addSubview:self.blcokButton];
+    [self.view addSubview:self.delegateButton];
     
-    self.dataReqButton.frame = CGRectMake(100, 100, 150, 40);
-    self.modelReqButton.frame = CGRectMake(100, 200, 150, 40);
+    self.blcokButton.frame = CGRectMake(100, 100, 150, 40);
+    self.delegateButton.frame = CGRectMake(100, 200, 150, 40);
 }
 
 
 #pragma mark - event handler
 
-- (void)dataBtnAction {
-    IFDataRequest *request = [[IFDataRequest alloc] init];
-    [request startWithSuccessBlock:^(IFBaseRequest * _Nonnull request, id  _Nullable responseObject) {
-        
-        NSArray *modelArr = [NSArray yy_modelArrayWithClass:IFDemoModel.class json:responseObject[@"data"]];
-        
-        NSLog(@"");
-    } failureBlock:^(IFBaseRequest * _Nonnull request, IFErrorResponseModel * _Nonnull errorModel) {
-        NSLog(@"");
-    }];
+- (void)delegateBtnAction {
+    IFDelegateController *delegateVC = [[IFDelegateController alloc] init];
+    [self.navigationController pushViewController:delegateVC animated:YES];
 }
 
-- (void)modelBtnAction {
-    IFMyModelRequest *request = [[IFMyModelRequest alloc] init];
-    [request startWithSuccessBlock:^(IFBaseRequest * _Nonnull request, id  _Nullable responseObject) {
-        NSLog(@"");
-    } failureBlock:^(IFBaseRequest * _Nonnull request, IFErrorResponseModel * _Nonnull errorModel) {
-        NSLog(@"");
-    }];
+- (void)blockBtnAction {
+    IFBlockController *blockVC = [[IFBlockController alloc] init];
+    [self.navigationController pushViewController:blockVC animated:YES];
 }
 
 
 
 #pragma mark - getter
 
-- (UIButton *)dataReqButton {
-    if (!_dataReqButton) {
-        _dataReqButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_dataReqButton setTitle:@"普通请求" forState:UIControlStateNormal];
-        [_dataReqButton addTarget:self action:@selector(dataBtnAction) forControlEvents:UIControlEventTouchUpInside];
-        _dataReqButton.backgroundColor = UIColor.darkGrayColor;
-        _dataReqButton.layer.cornerRadius = 4;
-        _dataReqButton.clipsToBounds = YES;
+- (UIButton *)blcokButton {
+    if (!_blcokButton) {
+        _blcokButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_blcokButton setTitle:@"Block 样式" forState:UIControlStateNormal];
+        [_blcokButton addTarget:self action:@selector(blockBtnAction) forControlEvents:UIControlEventTouchUpInside];
+        _blcokButton.backgroundColor = UIColor.darkGrayColor;
+        _blcokButton.layer.cornerRadius = 4;
+        _blcokButton.clipsToBounds = YES;
     }
-    return _dataReqButton;
+    return _blcokButton;
 }
 
-- (UIButton *)modelReqButton {
-    if (!_modelReqButton) {
-        _modelReqButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_modelReqButton setTitle:@"Model 请求" forState:UIControlStateNormal];
-        [_modelReqButton addTarget:self action:@selector(modelBtnAction) forControlEvents:UIControlEventTouchUpInside];
-        _modelReqButton.backgroundColor = UIColor.darkGrayColor;
-        _modelReqButton.layer.cornerRadius = 4;
-        _modelReqButton.clipsToBounds = YES;
+- (UIButton *)delegateButton {
+    if (!_delegateButton) {
+        _delegateButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_delegateButton setTitle:@"Delegate 样式" forState:UIControlStateNormal];
+        [_delegateButton addTarget:self action:@selector(delegateBtnAction) forControlEvents:UIControlEventTouchUpInside];
+        _delegateButton.backgroundColor = UIColor.darkGrayColor;
+        _delegateButton.layer.cornerRadius = 4;
+        _delegateButton.clipsToBounds = YES;
     }
-    return _modelReqButton;
+    return _delegateButton;
 }
-
-
 
 @end

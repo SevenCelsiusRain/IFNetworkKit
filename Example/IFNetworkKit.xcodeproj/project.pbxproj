@@ -22,6 +22,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		69A4737E9E39047DE6360CC8 /* Pods_IFNetworkKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FED2437C60C7E540C54F5077 /* Pods_IFNetworkKit_Example.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7F12AF692812B8C6009B2F41 /* loggingIn.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7F12AF682812B8C6009B2F41 /* loggingIn.gif */; };
+		7F12AF6C2812BB53009B2F41 /* IFBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F12AF6B2812BB53009B2F41 /* IFBlockController.m */; };
+		7F12AF6F2812BB62009B2F41 /* IFDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F12AF6E2812BB62009B2F41 /* IFDelegateController.m */; };
 		7F6BB27827DA01760000F9CF /* IFDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BB27727DA01760000F9CF /* IFDataRequest.m */; };
 		7F6BB27E27DA02960000F9CF /* IFNetConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BB27D27DA02960000F9CF /* IFNetConfigManager.m */; };
 		7F6BB28127DA03E50000F9CF /* IFDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6BB28027DA03E50000F9CF /* IFDemoModel.m */; };
@@ -67,6 +70,11 @@
 		6C0CE7C77CB2DE2E811AFE0E /* Pods_IFNetworkKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFNetworkKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DCF1108F024ECCF9678323 /* Pods-IFNetworkKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFNetworkKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-IFNetworkKit_Tests/Pods-IFNetworkKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F12AF682812B8C6009B2F41 /* loggingIn.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loggingIn.gif; sourceTree = "<group>"; };
+		7F12AF6A2812BB53009B2F41 /* IFBlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFBlockController.h; sourceTree = "<group>"; };
+		7F12AF6B2812BB53009B2F41 /* IFBlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFBlockController.m; sourceTree = "<group>"; };
+		7F12AF6D2812BB62009B2F41 /* IFDelegateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFDelegateController.h; sourceTree = "<group>"; };
+		7F12AF6E2812BB62009B2F41 /* IFDelegateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFDelegateController.m; sourceTree = "<group>"; };
 		7F6BB27627DA01760000F9CF /* IFDataRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFDataRequest.h; sourceTree = "<group>"; };
 		7F6BB27727DA01760000F9CF /* IFDataRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IFDataRequest.m; sourceTree = "<group>"; };
 		7F6BB27C27DA02960000F9CF /* IFNetConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFNetConfigManager.h; sourceTree = "<group>"; };
@@ -173,6 +181,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7F12AF682812B8C6009B2F41 /* loggingIn.gif */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				7F6C760F2812839300260B2C /* IFDemo.json */,
@@ -232,6 +241,10 @@
 			children = (
 				6003F5A5195388D20070C39A /* IFViewController.h */,
 				6003F5A6195388D20070C39A /* IFViewController.m */,
+				7F12AF6A2812BB53009B2F41 /* IFBlockController.h */,
+				7F12AF6B2812BB53009B2F41 /* IFBlockController.m */,
+				7F12AF6D2812BB62009B2F41 /* IFDelegateController.h */,
+				7F12AF6E2812BB62009B2F41 /* IFDelegateController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -342,6 +355,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				7F6C76102812839300260B2C /* IFDemo.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				7F12AF692812B8C6009B2F41 /* loggingIn.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,13 +400,19 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IFNetworkKit_Example/Pods-IFNetworkKit_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CRToast/CRToast.framework",
 				"${BUILT_PRODUCTS_DIR}/IFNetworkKit/IFNetworkKit.framework",
+				"${BUILT_PRODUCTS_DIR}/IFToast/IFToast.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CRToast.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFNetworkKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFToast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +456,9 @@
 				7F6BB27E27DA02960000F9CF /* IFNetConfigManager.m in Sources */,
 				7F6BB27827DA01760000F9CF /* IFDataRequest.m in Sources */,
 				7F6BB28127DA03E50000F9CF /* IFDemoModel.m in Sources */,
+				7F12AF6C2812BB53009B2F41 /* IFBlockController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				7F12AF6F2812BB62009B2F41 /* IFDelegateController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

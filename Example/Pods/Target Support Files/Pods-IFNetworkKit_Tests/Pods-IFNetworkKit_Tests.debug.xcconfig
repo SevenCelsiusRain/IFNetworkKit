@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/IFNetworkKit" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/CRToast" "${PODS_CONFIGURATION_BUILD_DIR}/IFNetworkKit" "${PODS_CONFIGURATION_BUILD_DIR}/IFToast" "${PODS_CONFIGURATION_BUILD_DIR}/YYImage" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IFNetworkKit/IFNetworkKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel/YYModel.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "CoreFoundation" -framework "Foundation" -framework "IFNetworkKit" -framework "YYModel"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking/AFNetworking.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CRToast/CRToast.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IFNetworkKit/IFNetworkKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IFToast/IFToast.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYImage/YYImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YYModel/YYModel.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -l"z" -framework "AFNetworking" -framework "Accelerate" -framework "AssetsLibrary" -framework "CRToast" -framework "CoreFoundation" -framework "Foundation" -framework "IFNetworkKit" -framework "IFToast" -framework "ImageIO" -framework "MobileCoreServices" -framework "QuartzCore" -framework "UIKit" -framework "YYImage" -framework "YYModel"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

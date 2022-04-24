@@ -1,0 +1,6 @@
+framework module IFToast {
+  umbrella header "IFToast-umbrella.h"
+
+  export *
+  module * { export * }
+}
