@@ -94,6 +94,7 @@
             }
             return result;
         };
+        config.responseFilters = @[[[IFDemoFilter alloc] init]];
 //        config.responseFilters = @[[[LKLogOutFilter alloc] init]];
         
     } forCategory:kRequestCategoryUserCenter];

@@ -13,7 +13,6 @@
 - (BOOL)filter:(__kindof IFBaseRequest *)request {
     // 进行特殊响应码过滤
     NSObject *obj = request.responseObject;
-    
     if ([request.responseObject isKindOfClass:IFResponseModel.class]) {
         IFResponseModel *model = (IFResponseModel *)request.responseObject;
         if (model.apiCode == 2000) {
