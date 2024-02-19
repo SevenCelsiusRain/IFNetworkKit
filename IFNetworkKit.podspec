@@ -20,11 +20,11 @@ Pod::Spec.new do |s|
   6. 支持基于分类的网络请求配置
   7. 支持响应内容的默认序列化操作IFModelRequest
                        DESC
-  s.homepage         = 'https://ifgitlab.gwm.cn/iov-ios/IFNetworkKit'
+  s.homepage         = 'https://github.com/SevenCelsiusRain/IFNetworkKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '张高磊' => 'mrglzh@yeah.net' }
-  s.source           = { :git => 'http://10.255.35.174/iov-ios/IFNetworkKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SevenCelsiusRain/IFNetworkKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
